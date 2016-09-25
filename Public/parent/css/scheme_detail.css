@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.yy-look{
+    width:100%;
+    max-width:4.14rem;
+    margin: 0 auto;
+}
+.yy-look h2{
+    font-size: 0.12rem;
+    color: #000;
+    padding: 0.1rem;
+    margin: 0.1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.yy-look h2{
+    font-size: 0.16rem;
+    color: #000;
+}
+.time{
+    font-size: 0.12rem;
+    padding:0 0.1rem 0.1rem;
+}
+.time b{
+    color:#999;
+    font-weight: normal;
+    margin-right: 0.10rem;
+}
+.time span{
+    color:#666;
+}
+.editor-nr{
+    font-size: 0.14rem;
+    padding:0.1rem;
+}
+.editor-nr p{
+    line-height: 0.2rem;
+}
+.editor-nr img{
+    width:100%;
+}

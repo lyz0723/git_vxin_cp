@@ -1,0 +1,166 @@
+body{
+    background: #eee;
+    font-size: 0.14rem;
+}
+.header{
+    width: 3.75rem;
+    height: 1.15rem;
+    margin: 0 auto;
+    background: url("../images/fa_img.png") no-repeat center;
+    background-size:cover;
+    position: relative;
+}
+.header .cehua{
+    width: 0.18rem;
+    padding-left: 0.3rem;
+    padding-bottom: 0.3rem;
+    position: absolute;
+    top:0.1rem;
+    right: 0.1rem;
+}
+.infor{
+    width: 3.75rem;
+    padding-bottom: 0.6rem;
+    margin: 0.17rem auto 0;
+    background: url("../images/fa_infor_bg.jpg") repeat-y left;
+    background-size:0.72rem auto;
+}
+.infor .title{
+    margin-left: 0.12rem;
+    display: inline-block;
+    font-size: 0.15rem;
+    color: #67d0f1;
+    line-height: 0.3rem;
+    padding: 0 0.1rem;
+    border-radius: 0.15rem;
+    background: #fff;
+}
+.infor-list{
+    padding: 0 0.12rem;
+}
+.infor-list li{
+    padding: 0.2rem;
+    background: #fff;
+    margin-top: 0.1rem;
+    border-radius: 0.05rem;
+}
+.infor-list li img{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    margin-right: 0.18rem;
+    float: left;
+}
+
+.infor-list li .right{
+    width: 2.5rem;
+    float: left;
+}
+
+.infor-list li h2{
+    font-weight: normal;
+    font-size: 0.15rem;
+    color: #333;
+}
+.infor-list li p{
+    font-size: 0.14rem;
+    color: #666;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.content{
+    position: relative;
+    z-index: 3;
+    background: #d4f3fd;
+}
+.mask{
+    display: none;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 2;
+}
+.left-move{
+    transform: translate(-1.85rem,0);
+    animation: move-in 0.6s 0s ease;
+    -webkit-animation:  move-in 0.6s 0s ease;;
+}
+.right-move{
+    transform: translate(0,0);
+    animation: move-out 0.6s 0s ease;
+    -webkit-animation:  move-out 0.6s 0s ease;
+}
+@keyframes move-in{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+
+    100%{
+        transform: translate3d(-1.85rem,0,0);
+    }
+}
+@keyframes move-out{
+    0%{
+        transform: translate3d(-1.85rem,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+.fix-right{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    width:1.85rem;
+    background: #444545;
+    z-index: 2;
+    color: #fff;
+}
+.fix-right h2{
+    font-size: 0.15rem;
+    color: #fff;
+    line-height: 0.45rem;
+    border-bottom: 2px solid #404041;
+    text-indent: 0.15rem;
+}
+.fix-right .list{
+    width: 1.58rem;
+    float: right;
+}
+.fix-right .list li{
+    font-size: 0.14rem;
+    line-height: 0.45rem;
+    border-bottom: 1px solid #404041;
+}
+.fix-right .list li img{
+    width: 0.11rem;
+    margin-top: -0.02rem;
+    margin-right: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+.reaudio{
+	width: 100%;
+	height: 50px;
+}
+.voicewave{
+	width: 0.2rem;
+	height: 0.2rem;
+	float: left;
+	margin-left: 0.05rem;
+	clear: both;
+}
+.mid-jindu{
+	width: 2.0rem;
+    height: 0.08rem;
+    border-radius: 30px;
+    background: #c9c9c9;
+    float: left;
+    margin-left: 0.15rem;
+    margin-top: 0.08rem;
+}
+.jindu{
+	width: 0%;
+	height: 0.08rem;
+    border-radius: 0.15rem;
+    background: #09bb07;
+    float: left;
+}
+.jindu .wn{
+	display: inline-block;
+    width: 0.28rem;
+    height: 0.18rem;
+    float: right;
+    margin-right: -0.2rem;
+    margin-top: -0.05rem;
+}
+.right-time{
+	float: left;
+    margin-left: 0.15rem;
+	margin-top: 0.04rem;
+	font-size: 0.14rem;
+}
+.right-time span{
+	float: left;
+}
+.voicewave span{
+	float: left;
+	display: inline-block;
+}
+.one{
+	width: 0.04rem;
+    height: 0.08rem;
+    background: url(http://qd.vxin365.com/test_project/jzb/images/1.png);
+    background-size: 100% 100%;
+    margin-top: 0.08rem;
+}
+.two{
+	width: 0.05rem;
+    height: 0.17rem;
+    background: url(http://qd.vxin365.com/test_project/jzb/images/2.png);
+    /*background: url(../images/2.png);*/
+    background-size: 100% 100%;
+    margin-top: 0.035rem;
+    margin-left: 0.015rem;
+}
+.three{
+	width: 0.08rem;
+    height: 0.24rem;
+    background: url(http://qd.vxin365.com/test_project/jzb/images/3.png);
+    background-size: 100% 100%;
+}
+.mp3{
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+.mp4{
+	width: 100%;
+	height: 280px;
+	position: relative;
+	background: black;
+}
+video{
+	float: left;
+}
+audio{
+	float: left;
+}
+.floatbox{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: black;
+	display: none;
+}
+.floatbox  video{
+	width: 100%;
+	height: 280px;
+	margin:auto;
+}
+.v{
+	position: absolute;
+	top: 1.0rem;
+	z-index: 999;
+}
+.blackbox{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 998;
+}
+

@@ -1,0 +1,78 @@
+.footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    z-index: 10;
+    width:100%;
+    height:0.5rem;
+    background: #fff;
+    box-shadow: 0 -0.03rem 0.1rem #d9d9d9;
+    font-size: 0.12rem;
+}
+
+.footer li{
+    float: left;
+    height:0.4rem;
+    width:25%;
+    text-align: center;
+    margin-top: 0.05rem;
+}
+
+.footer li a{
+    display: inline-block;
+    width: 0.5rem;
+    font-size: 0.12rem;
+    padding-top:0.26rem;
+    color: #666;
+}
+
+.footer li .fot1{
+    background: url("../images/footer_icon1.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot1.active{
+    background: url("../images/footer_icon1_light.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot2{
+    background: url("../images/footer_icon2.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot2.active{
+    background: url("../images/footer_icon2_light.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot3{
+    background: url("../images/footer_icon3.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot3.active{
+    background: url("../images/footer_icon3_light.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot4{
+    background: url("../images/footer_icon4.png")  no-repeat center top;
+    background-size:52%;
+}
+
+.footer li .fot4.active{
+    background: url("../images/footer_icon4_light.png")  no-repeat center top;
+    background-size:52%;
+}
+.loading{
+    display: none;
+    text-align: center;
+    width: 100%;
+    background: #eee;
+}
+.loading img{
+    padding-top: 1.5rem;
+    width: 1.5rem;
+}
+

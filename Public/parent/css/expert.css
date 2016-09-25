@@ -1,0 +1,133 @@
+body{
+    background: #eee;
+    font-size: 0.12rem;
+}
+.contain{
+    padding-bottom: 0.6rem;
+}
+.header{
+    background: #fff;
+    width: 3.75rem;
+    margin: 0 auto;
+}
+.video{
+    width: 3.75rem;
+    height: 1.8rem;
+}
+.video video{
+    width: 3.75rem;
+    height: 1.8rem;
+    margin: 0 auto;
+}
+
+.header>h2{
+    padding: 0 0.1rem;
+    line-height: 0.38rem;
+    font-size: 0.16rem;
+    color: #333;
+}
+.video-detail{
+    line-height: 0.2rem;
+    font-size: 0.13rem;
+    color: #666;
+    width: 3.55rem;
+    margin: 0 auto;
+    position: relative;
+}
+.video-detail span.bor-left{
+    position: absolute;
+    left: 0;
+    top:0.03rem;
+    width: 0.04rem;
+    height: 0.33rem;
+    background: #51c2e6;
+}
+.video-detail .left{
+    margin-left: 0.1rem;
+    width: 0.7rem;
+    float: left;
+}
+.video-detail p{
+    float: left;
+    width: 2.75rem;
+}
+.video-detail p.height{
+    height: 0.2rem;
+    overflow: hidden;
+}
+
+.prism-player .prism-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prism-player .prism-big-play-btn{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../images/zj_play.png") no-repeat center;
+    background-size: cover;
+}
+.header .fold{
+    height: 0.35rem;
+    text-align: center;
+}
+
+.header .fold img{
+    width: 0.16rem;
+    margin-top: 0.1rem;
+}
+.contain{
+    padding-bottom: 0.6rem;
+}
+.kc-boss{
+    background: #fff;
+    width: 3.75rem;
+    margin: 0.1rem auto;
+}
+
+.kc-boss h2{
+    padding: 0 0.1rem;
+    line-height:0.46rem;
+    font-size: 0.16rem;
+    color: #333;
+}
+.kc-boss h2 img{
+    width: 0.19rem;
+    margin-top: -0.04rem;
+    margin-right: 0.05rem;
+}
+.kc-list li{
+    width: 1.85rem;
+    float: left;
+}
+.kc-list li:nth-child(2n+1){
+    float: right;
+}
+.kc-list li img{
+    width: 1.85rem;
+}
+.kc-list li .p2{
+    font-weight: bold;
+    font-size: 0.14rem;
+    color: #333;
+    padding-top: 0.05rem;
+}
+.kc-list li .p3{
+    font-size: 0.12rem;
+    color: #666;
+    line-height: 0.2rem;
+    padding-bottom: 0.1rem;
+}
+
+.kc-list li .p2,.kc-list li .p3{
+    padding-left: 0.1rem;
+    width: 1.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+

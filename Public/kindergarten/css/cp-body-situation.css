@@ -1,0 +1,182 @@
+body{
+    background: #444545;
+    font-size: 0.14rem;
+}
+header{
+    height: 1.7rem;
+    width: 3.75rem;
+    margin: 0 auto;
+    background: url("../images/cp_bag.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    font-size: 0.13rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+header dl{
+    margin-top: 0.25rem;
+    margin-left: 0.2rem;
+}
+header dt{
+    text-align: center;
+    float: left;
+    width: 1.01rem;
+    height: 0.92rem;
+    background: url("../images/cp_tou.png") no-repeat center;
+    background-size: 100% auto;
+}
+
+header dt img{
+    width: 0.68rem;
+    height: 0.68rem;
+    margin-top: 0.14rem;
+    border-radius: 50%;
+}
+header dd{
+    padding-left: 0.1rem;
+    float: left;
+    line-height: 0.2rem;
+}
+header dd h2{
+    font-size: 0.17rem;
+    padding-top: 0.16rem;
+    line-height: 0.24rem;
+}
+header dd h2 .name{
+    padding-right: 0.1rem;
+}
+header dd p{
+    line-height: 0.14rem;
+    display: inline-block;
+    padding-right: 0.06rem;
+    padding-left: 0.06rem;
+    border-right: 1px solid #fff;
+}
+header dd p.baby{
+    padding-left: 0;
+}
+header dd p.class{
+    padding-right: 0;
+    border-right: 0;
+}
+header .cehua{
+    width: 0.18rem;
+    position: absolute;
+    top:0.1rem;
+    right: 0.1rem;
+}
+.nav-boss{
+    width: 3.75rem;
+    margin: 0 auto;
+    background: #fff;
+}
+.nav{
+    width: 3.05rem;
+    margin: 0 auto;
+}
+.nav li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.nav li.active a{
+    background: #51c2e6;
+    color: #fff;
+    box-shadow: 0 -0.02rem 0.06rem #a8d9ed;
+}
+.nav li.left-side a{
+    float: left;
+}
+.nav li.right-side a{
+    float: right;
+}
+.nav li a{
+    width: 1.35rem;
+    height: 0.3rem;
+    overflow: hidden;
+    color: #5bb8dd;
+    font-size: 0.14rem;
+    font-weight: bold;
+    line-height: 0.31rem;
+    background: #eaf5fe;
+    margin: 0.07rem 0;
+    border-radius: 0.15rem;
+}
+.nav li a img{
+    width: 0.19rem;
+    margin-top: -0.03rem;
+    margin-right: 0.02rem;
+}
+
+.content{
+    position: relative;
+    z-index: 3;
+    background: #eee;
+}
+.mask{
+    display: none;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 2;
+}
+.left-move{
+    transform: translate(-1.85rem,0);
+    animation: move-in 0.6s 0s ease;
+    -webkit-animation:  move-in 0.6s 0s ease;;
+}
+.right-move{
+    transform: translate(0,0);
+    animation: move-out 0.6s 0s ease;
+    -webkit-animation:  move-out 0.6s 0s ease;
+}
+@keyframes move-in{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+
+    100%{
+        transform: translate3d(-1.85rem,0,0);
+    }
+}
+@keyframes move-out{
+    0%{
+        transform: translate3d(-1.85rem,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+.fix-right{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    width:1.85rem;
+    background: #444545;
+    z-index: 2;
+    color: #fff;
+}
+.fix-right h2{
+    font-size: 0.15rem;
+    color: #fff;
+    line-height: 0.45rem;
+    border-bottom: 2px solid #404041;
+    text-indent: 0.15rem;
+}
+.fix-right .list{
+    width: 1.58rem;
+    float: right;
+}
+.fix-right .list li{
+    font-size: 0.14rem;
+    line-height: 0.45rem;
+    border-bottom: 1px solid #404041;
+}
+.fix-right .list li img{
+    width: 0.11rem;
+    margin-top: -0.02rem;
+    margin-right: 0.1rem;
+}

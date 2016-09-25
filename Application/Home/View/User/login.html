@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>登录</title>
+    <link rel="stylesheet" href="__PUBLIC__/web_common/css/wap-common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/web_common/css/rem.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/login/css/login.css"/>
+    <script type="text/javascript" src="__PUBLIC__/web_common/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/web_common/js/rem.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/login/js/login.js"></script>
+</head>
+<body>
+<div class="contain">
+    <form action="__URL__/login_do" method="post">
+        <p class="input"><input type="tel" name="utel" id="utel" placeholder="请输入您的手机号码"></p>
+        <p class="input"><input type="tel" name="code" placeholder="请输入验证码">
+            <button type="button">获取验证码</button></p>
+        <p class="input submit"><input type="submit" id="login" value="登录"></p>
+        <p class="clearfix no-yzm"><a>收不到验证码</a></p>
+        <p class="tips">如果幼儿园尚未开通爱宝运动测评服务，您可以留下相关信息了解更多测评相关详细信息。<a href="#">了解爱宝运动测评</a> </p>
+    </form>
+</div>
+</body>
+</html>
+<script>
+    $('button').click(function(){
+        var time = 60;
+        var $this = $(this);
+        //获取用户手机号码
+        var utel=$("#utel").val();
+        var url="__URL__/Code";
+        var data={'utel':utel};
+        $.post(url,data,function(msg){
+            //alert(msg)
+            if(msg=="4"){
+                alert('您尚未开通爱宝运动测评服务');
+                $this.attr("disabled","true");
+            }else{
+                $this.attr("disabled","true");
+                var timer=setInterval(function(){
+                    time--;
+                    if(time<=0){
+                        $this.text("重新获取");
+                        clearInterval(timer);
+                        $this.removeAttr("disabled")
+                    }else{
+                        $this.text(time+'s');
+                    }
+                },1000)
+            }
+        })
+    });
+
+</script>

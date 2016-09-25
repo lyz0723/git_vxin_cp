@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>爱宝视频</title>
+    <link rel="stylesheet" href="__PUBLIC__/web_common/css/wap-common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/web_common/css/rem.css"/>
+    <link rel="stylesheet" href="http://g.alicdn.com/de/prismplayer/1.4.7/skins/default/index.css" />
+    <link rel="stylesheet" href="__PUBLIC__/parent/css/video-list.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/parent/css/footer.css"/>
+    <script type="text/javascript" src="http://g.alicdn.com/de/prismplayer/1.4.7/prism-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/web_common/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/web_common/js/rem.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/parent/js/video-list.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+
+        <header>
+            <img class="cehua" data-falg="0" src="{$vo.image}"></header>
+        <div class="contain">
+            <foreach name="exam_video" item="val">
+                <h2 class="title"><img src="__PUBLIC__/parent/images/sp_icon.png"><span>
+                    <!--视频拍摄时间-->
+                    <?php
+                    $time=strtotime($val['create_time']);
+                    $date=date("Y-m-d",$time);
+                     echo $date;
+                    ?>
+
+                </span></h2>
+
+                <div class="video-boss">
+                    <div class="video-content">
+                        <?php foreach($val['v_id'] as $k=>$v){?>
+                        <div id="video<?php echo $val['v_id'][$k]?>" class="prism-player"></div>
+                        <?php }?>
+                        <!--<div class="control-tontent">
+                            <div class="fix-bot clearfix">
+                                <span class="druation"></span>-->
+                                <?php foreach($val['v_url'] as $k=>$v){?>
+                                <!--<p class="fr">
+                                    &lt;!&ndash;<img src="">&ndash;&gt;
+                                    &lt;!&ndash;<a href="<?php echo $v?>" download="mp4">1</a>&ndash;&gt;
+                                    &lt;!&ndash;<img src="<?php echo $val['image'][$k]?>"/>&ndash;&gt;
+                                </p>-->
+                                <?php }?>
+                          <!--  </div>
+                        </div>-->
+                    </div>
+                </div>
+            </foreach>
+
+            <!--<div class="video-content">-->
+            <!--<div id="video2" class="prism-player"></div>-->
+            <!--<div class="control-tontent">-->
+            <!--<div class="fix-bot clearfix">-->
+            <!--<span class="druation">01:20</span>-->
+            <!--<p class="fr">-->
+            <!--< img class="share" src="images/sp_icon1.png">-->
+            <!--< a href="video/bbb.mp4" download="mp4">< img src="images/sp_icon2.png"></ a>-->
+            <!--</p >-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="mask"></div>
+    </div>
+    <div class="share-guide"><img src="__PUBLIC__/parent/images/share_guide.png"></div>
+    <div class="fix-right">
+        <h2>我的历史测评</h2>
+        <div class="clearfix">
+            <ul class="list">
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+                <li><img src="__PUBLIC__/parent/images/cp_icon.png">2016-08</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

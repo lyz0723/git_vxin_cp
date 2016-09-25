@@ -1,0 +1,12 @@
+body{
+    font-size: 0.14rem;
+}
+.hui-ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.hui-ul li img{
+    width: 70%;
+}

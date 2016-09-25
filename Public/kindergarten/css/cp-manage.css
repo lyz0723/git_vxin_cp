@@ -1,0 +1,149 @@
+/**
+ * Created by Ideal on 2016/9/12.
+ */
+body{
+    background: #eee;
+    font-size: 0.14rem;
+}
+#nav{
+    text-align: center;
+    width: 3.75rem;
+    margin: 0 auto;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+#nav li{
+    float: left;
+    width: 25%;
+    height: 0.47rem;
+    position: relative;
+}
+#nav li p{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 0.47rem;
+}
+#nav li a{
+    width: 80%;
+    display: inline-block;
+    height: 0.45rem;
+    line-height: 0.46rem;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+}
+#nav li.active a{
+    border-bottom: 2px solid #51c2e6;
+    color: #51c2e6;
+}
+
+.class-list{
+    background: #fafafa;
+    width: 3.75rem;
+    margin: 0.1rem auto 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+.class-list .title{
+    background: #fff;
+    padding: 0.16rem 0;
+    color: #333;
+}
+.class-list .title span{
+    display: inline-block;
+}
+.class-list .title .class{
+    border-left: 3px solid #51c2e6;
+    text-indent: 0.07rem;
+    font-size: 0.15rem;
+    line-height: 0.16rem;
+}
+.class-list .title .teacher{
+    float: right;
+    font-size: 0.14rem;
+    padding-right: 0.12rem;
+}
+.class-list .baby-boss{
+    padding-top: 0.06rem;
+    padding-bottom: 0.2rem;
+}
+.class-list .baby-list{
+    width: 3.52rem;
+    height: 1.34rem;
+    margin: 0.13rem auto 0;
+    background: url("../images/cp_list_bg.jpg") no-repeat center;
+    background-size:100% 100%;
+}
+.class-list .baby-list dl{
+    width: 3.3rem;
+    margin: 0 auto;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.class-list .baby-list dt{
+    float: left;
+}
+.class-list .baby-list dd{
+    float: left;
+}
+.class-list .baby-list dt img{
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 50%;
+    padding: 0.13rem 0.13rem 0.13rem 0.05rem;
+}
+.baby-list dd h2{
+    padding-bottom: 0.07rem;
+    padding-top: 0.16rem;
+    font-size: 0.15rem;
+    color: #333;
+    font-weight: normal;
+}
+.baby-list dd h2 strong{
+    float: left;
+    font-weight: normal;
+}
+.baby-list dd h2 span{
+    float: left;
+    width: 0.6rem;
+    height: 0.15rem;
+    text-align: center;
+    line-height: 0.15rem;
+    background: #ffb033;
+    color: #fff;
+    font-size: 0.1rem;
+    margin-top: 0.03rem;
+    margin-left: 0.05rem;
+}
+.baby-list dd .father,.baby-list dd .mother{
+    font-size: 0.14rem;
+    color: #666;
+    line-height: 0.18rem;
+}
+
+.baby-list ul{
+    margin: 0 auto;
+}
+.baby-list li{
+    font-size: 0.12rem;
+    display: inline-block;
+    line-height: 0.35rem;
+    margin-left: 0.3rem;
+    text-align: center;
+    color: #51c2e6;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
